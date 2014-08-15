@@ -18,8 +18,8 @@ Usage
 
 Required Folders 
 ------------------
-(currently set up to generate jade files as well in the project root)
-1. <root>/raw/tpl/
+1. <root>/raw/tpl/   (currently set up to generate jade files in the project root)
+
 
 Todo
 ----
