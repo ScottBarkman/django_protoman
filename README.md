@@ -7,8 +7,9 @@ Running `prototypeme` will set up a new TemplateView, and Url mapping along with
 
 Installation
 -----------
-1. Include `django-prototyper` in your `INSTALLED_APPS`
-2. Include url's into app
+1. Download/clone/fetch this repo into your app directory
+2. Include `django-prototyper` in your `INSTALLED_APPS`
+3. Include url file into app
 `url(r'^prototyper/', include('django-prototyper.urls')),`
 
 Usage
