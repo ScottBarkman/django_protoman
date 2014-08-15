@@ -8,7 +8,7 @@ def camelcaseme(text):
 class Command(BaseCommand):
     help = "create a new prototype. This will create a django template, url config, and basic direct to template CBV"
 
-    def handle(self, name, *args, **options):
+    def handle(self, name, context=None, *args, **options):
         with open('../../raw/tpl/%s.jade' % (name), 'a') as f:
             f.write("""//-%s-\\\\""" % (name,))
 
@@ -18,9 +18,13 @@ class Command(BaseCommand):
         with open('prototyper/views.py', 'a') as f:
             view = """
 class %s(TemplateView):
-    template_name='prototyper/%s.html'
+    template_name = 'prototyper/%s.html'
 
-""" % (camelcaseme(name), name)
+    def get_context_data(*args, **kwargs):
+        c = super(%s, self).get_context_data(*args, **kwargs)
+        c.append(%s)
+        return c
+""" % (camelcaseme(name), name, camelcaseme(name), context)
 
             f.write(view)
 
@@ -33,4 +37,5 @@ class %s(TemplateView):
 )
 """ % (name, camelcaseme(name), name)
 )
+
         return 'Template %s created. /prototyper/%s/ to view ' % (name, name)
