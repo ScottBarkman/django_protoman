@@ -1,4 +1,4 @@
-django-prototyper
+django-prototyper 0.0.1a
 =================
 
 Simple django app to help with prototyping. 
@@ -27,4 +27,4 @@ Todo
 1. Ability to create folders if necessary (see above)
 2. Create some variables so you can pass in template names & directories
 3. Create a method to turn off/on jade creation
-4. Ability to pass in a dictionary to be returned as context
+4. Flesh out ability to pass in a dictionary to be returned as context (simple integration complete)
