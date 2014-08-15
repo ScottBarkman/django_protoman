@@ -1,4 +1,3 @@
-import os
 from django.core.management.base import BaseCommand
 
 
@@ -34,4 +33,4 @@ class %s(TemplateView):
 )
 """ % (name, camelcaseme(name), name)
 )
-        # return 'Template %s created. /prototyper/%s/ to view ' % (name, name)
+        return 'Template %s created. /prototyper/%s/ to view ' % (name, name)
