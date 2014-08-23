@@ -10,4 +10,7 @@ setup(
   download_url = 'https://github.com/ScottBarkman/django-protoman/tarball/{tag}', # I'll explain this in a second
   keywords = ['prototyping', 'prototype', 'helper'], # arbitrary keywords
   classifiers = [],
+
+  install_requires=['django', ],
+
 )
