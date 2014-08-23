@@ -1,23 +1,23 @@
-django-prototyper 0.0.1a
+protoman 0.1a
 =================
 
-Simple django app to help with prototyping. 
+Simple django app to help with prototyping.
 
-Running `prototypeme` will set up a new TemplateView, and Url mapping along with a django template file for your prototype. This allows you to keep your prototypes inside of the django engine thus giving you all the django goodies, while keeping your code highly re-usable. Also allows your front end 'devs' to stay the heck out of your python code. As a nice bonus to your devs, it creates a usuable list of views that they will need to bang out. 
+Running `newprototype` will set up a new TemplateView, and Url mapping along with a django template file for your prototype. This allows you to keep your prototypes inside of the django engine thus giving you all the django goodies, while keeping your code highly re-usable. Also allows your front end 'devs' to stay the heck out of your python code. As a nice bonus to your devs, it creates a usuable list of views that they will need to bang out.
 
 Installation
 -----------
 1. Download/clone/fetch this repo into your app directory
-2. Include `django-prototyper` in your `INSTALLED_APPS`
+2. Include `protoman` in your `INSTALLED_APPS`
 3. Include url file into app
-`url(r'^prototyper/', include('django-prototyper.urls')),`
+`url(r'^protoman/', include('protoman.urls')),`
 
 Usage
 -------
-`manage.py prototypeme <name of prototype>`
+`manage.py newprototype <name of prototype>`
 
 
-Required Folders 
+Required Folders
 ------------------
 1. <root>/raw/tpl/   (currently set up to generate jade files in the project root)
 
