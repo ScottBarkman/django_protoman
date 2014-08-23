@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'protoman',
-  packages = ['protoman'], # this must be the same as the name above
+  name = 'django-protoman',
+  packages = ['django-protoman'], # this must be the same as the name above
   version = '0.1',
   description = 'Simple django app to help with prototyping',
   author = 'Scott Barkman',
